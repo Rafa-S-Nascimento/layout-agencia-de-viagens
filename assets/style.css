@@ -250,17 +250,38 @@ button{
    list-style: none;
    margin-bottom: 3px;    
 }
-.map i{
-    margin-right: 22px;
-    font-size: 0.8em;
-}
-.phone i{
+.map::before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(./imagens/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
     margin-right: 20px;
-    font-size: 0.8em;
 }
-.mail i{
-    margin-right: 17px;
-    font-size: 0.8em;
+.phone::before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(./imagens/phone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    margin-right: 20px;
+}
+.mail::before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(./imagens/mail.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    margin-right: 15px;
 }
 .containers5 input{
     height: 56px;
@@ -284,15 +305,14 @@ button{
     margin-top: 5px;
     margin-bottom: 30px;   
 }
-.containerf div a{
-    margin: 0 1px;
-    font-size: 1.5em;
-    color: #606060;    
+.containerf div img{
+    width: 25px;
+    height: 25px; 
+    margin: 0 1px;   
 }
 .containerf div{
     margin-bottom: 30px;
 }
-i:hover{
+.containerf div img:hover{
     transform: scale(1.2);
 }
-
